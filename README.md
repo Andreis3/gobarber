@@ -13,10 +13,18 @@
     <img src = "https://user-images.githubusercontent.com/38704247/77016270-ff9f7b80-6955-11ea-81a5-40bbc1a380df.jpeg"/>
 </h1>
 
+<h1 align="center">
+  GoBarber
+</h1>
+
+<h1 align="center">
+    <img src = "https://user-images.githubusercontent.com/38704247/77016938-d54ebd80-6957-11ea-8da3-07ab03832bac.png"/>
+</h1>
+
 
 
 ## Material Guia de Estudo
-[Typescript, TDD, Clean Architecture e SOLID](https://www.udemy.com/course/tdd-com-mango/)
+[GoStack BootCamp](https://rocketseat.com.br/gostack)
 
 
 ## Contato
