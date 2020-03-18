@@ -18,7 +18,7 @@
 </h1>
 
 <h1 align="center">
-    <img src = "https://user-images.githubusercontent.com/38704247/77016938-d54ebd80-6957-11ea-8da3-07ab03832bac.png"/>
+    <img src = "https://user-images.githubusercontent.com/38704247/77017031-121ab480-6958-11ea-87db-5d8e7339baf0.jpeg"/>
 </h1>
 
 
