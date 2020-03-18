@@ -1,4 +1,4 @@
-# NodeJs, Typescript, TDD, Clean Architecture e SOLID
+# GoBarber GoStack
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
