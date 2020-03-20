@@ -10,6 +10,7 @@
     "docker:postgres": "docker run --name gobarberDB -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "pg": "^7.18.2",
     "pg-hstore": "^2.3.3",
