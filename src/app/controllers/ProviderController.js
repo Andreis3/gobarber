@@ -10,7 +10,7 @@ class ProviderController {
         { model: File, as: 'avatar', attributes: ['name', 'path', 'url'] },
       ],
     });
-    return res.status(200).json(providers);
+    return res.status(200).json({ providers });
   }
 }
 
