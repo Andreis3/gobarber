@@ -28,7 +28,7 @@ class AppointmentControlller {
         },
       ],
     });
-    return res.status(200).json(appointments);
+    return res.status(200).json({ appointments });
   }
 
   async store(req, res) {
