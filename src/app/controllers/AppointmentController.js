@@ -49,11 +49,11 @@ class AppointmentControlller {
      * check if provider_id is provider
      */
 
-    const isProcider = await User.findOne({
+    const isProvider = await User.findOne({
       where: { id: provider_id, provider: true },
     });
 
-    if (!isProcider) {
+    if (!isProvider) {
       return res
         .status(401)
         .json({ error: 'You can only creat appointments with providers' });
@@ -84,11 +84,16 @@ class AppointmentControlller {
         .status(400)
         .json({ error: 'Appointment date is not available' });
     }
+    if (req.userId === provider_id) {
+      return res
+        .status(400)
+        .json({ error: 'A provider dont appointment for Your self' });
+    }
 
     const {
       id,
       user_id,
-      provider_is,
+      provider_id: provider_id_alias,
       date: dateHourStart,
       canceled_at,
     } = await Appointment.create({
@@ -109,12 +114,16 @@ class AppointmentControlller {
 
     await Notification.create({
       content: `Novo agendamento de ${user.name} para o ${formattedDate}`,
-      user: provider_id,
+      user: provider_id_alias,
     });
 
-    return res
-      .status(201)
-      .json({ id, user_id, provider_is, dateHourStart, canceled_at });
+    return res.status(201).json({
+      id,
+      user_id,
+      provider_id: provider_id_alias,
+      dateHourStart,
+      canceled_at,
+    });
   }
 }
 export default new AppointmentControlller();
