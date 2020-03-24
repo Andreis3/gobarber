@@ -24,10 +24,13 @@ routes.use(authMiddleware);
 routes.put('/api/users', UserController.update);
 
 routes.get('/api/providers', ProviderController.index);
+
 routes.post('/api/appointements', AppointmentControlller.store);
 routes.get('/api/appointements', AppointmentControlller.index);
+routes.delete('/api/appointements/:id', AppointmentControlller.delete);
 
 routes.get('/api/schedules', ScheduleController.index);
+
 routes.get('/api/notifications', NotificationController.index);
 routes.put('/api/notifications/:id', NotificationController.update);
 
