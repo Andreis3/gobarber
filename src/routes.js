@@ -29,6 +29,7 @@ routes.get('/api/appointements', AppointmentControlller.index);
 
 routes.get('/api/schedules', ScheduleController.index);
 routes.get('/api/notifications', NotificationController.index);
+routes.put('/api/notifications/:id', NotificationController.update);
 
 routes.post('/api/files', upload.single('file'), FileController.store);
 
