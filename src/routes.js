@@ -7,6 +7,7 @@ import FileController from './app/controllers/FileController';
 import ProviderController from './app/controllers/ProviderController';
 import AppointmentControlller from './app/controllers/AppointmentController';
 import ScheduleController from './app/controllers/ScheduleController';
+import NotificationController from './app/controllers/NotificationController';
 
 import SessionController from './app/controllers/SessionController';
 
@@ -27,6 +28,7 @@ routes.post('/api/appointements', AppointmentControlller.store);
 routes.get('/api/appointements', AppointmentControlller.index);
 
 routes.get('/api/schedules', ScheduleController.index);
+routes.get('/api/notifications', NotificationController.index);
 
 routes.post('/api/files', upload.single('file'), FileController.store);
 
